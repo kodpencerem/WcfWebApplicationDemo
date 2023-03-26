@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,6 +49,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GetMessageRemotingService\GetMessageRemotingService.csproj">
+      <Project>{ee38d45c-54fb-481f-8c4c-098139332c73}</Project>
+      <Name>GetMessageRemotingService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IGetMessageRemotingService\IGetMessageRemotingService.csproj">
+      <Project>{00ee2673-3de7-4da4-b24b-ef5151420e83}</Project>
+      <Name>IGetMessageRemotingService</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
