@@ -1,20 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.Remoting.Channels;
+using System.Runtime.Remoting.Channels.Tcp;
 using System.Windows.Forms;
 
 namespace WFAGetMessageClient
 {
-    public partial class Form1 : Form
+    public partial class frmGetMessage : Form
     {
-        public Form1()
+        IGetMessageRemotingService.IGetMessageRemotingService client;
+
+        public frmGetMessage()
         {
             InitializeComponent();
+
+            TcpChannel channel = new TcpChannel();
+
+            ChannelServices.RegisterChannel(channel);
+
+            client = (IGetMessageRemotingService.IGetMessageRemotingService)Activator.GetObject(typeof(IGetMessageRemotingService.IGetMessageRemotingService), "tcp://localhost:8081/GetMessage");
+
+        }
+
+        private void btnGetMessage_Click(object sender, EventArgs e)
+        {
+            lblGetMessageResult.Text = client.GetMessage(tbxGetMessage.Text);
+
         }
     }
 }

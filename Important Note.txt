@@ -1,0 +1,3 @@
+
+
+Before you run the WFAGetMessageClient project, you need to navigate to the location of the WcfRemotingServiceHost project exec file and run it.
