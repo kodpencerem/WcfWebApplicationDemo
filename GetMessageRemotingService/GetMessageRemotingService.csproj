@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{00EE2673-3DE7-4DA4-B24B-EF5151420E83}</ProjectGuid>
+    <ProjectGuid>{EE38D45C-54FB-481F-8C4C-098139332C73}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IGetMessageRemotingService</RootNamespace>
-    <AssemblyName>IGetMessageRemotingService</AssemblyName>
+    <RootNamespace>GetMessageRemotingService</RootNamespace>
+    <AssemblyName>GetMessageRemotingService</AssemblyName>
     <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,8 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IGetMessageRemotingService.cs" />
+    <Compile Include="GetMessageRemotingService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IGetMessageRemotingService\IGetMessageRemotingService.csproj">
+      <Project>{00EE2673-3DE7-4DA4-B24B-EF5151420E83}</Project>
+      <Name>IGetMessageRemotingService</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
