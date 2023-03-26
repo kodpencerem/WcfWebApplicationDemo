@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfWebApplicationClient", "
 		{11137EE4-7A58-41A1-A7AC-CFE6BEEDC0F8} = {11137EE4-7A58-41A1-A7AC-CFE6BEEDC0F8}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IGetMessageRemotingService", "IGetMessageRemotingService\IGetMessageRemotingService.csproj", "{00EE2673-3DE7-4DA4-B24B-EF5151420E83}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{2EDE427A-38BB-4728-8C18-15FD056BC6CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EDE427A-38BB-4728-8C18-15FD056BC6CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EDE427A-38BB-4728-8C18-15FD056BC6CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00EE2673-3DE7-4DA4-B24B-EF5151420E83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00EE2673-3DE7-4DA4-B24B-EF5151420E83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00EE2673-3DE7-4DA4-B24B-EF5151420E83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00EE2673-3DE7-4DA4-B24B-EF5151420E83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
