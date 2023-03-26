@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Services;
+﻿using System.Web.Services;
 
 namespace WcfWebApplicationDemo
 {
@@ -18,9 +14,9 @@ namespace WcfWebApplicationDemo
     {
 
         [WebMethod]
-        public string HelloWorld()
+        public string GetMessage(string name)
         {
-            return "Hello World";
+            return "Hello " + name;
         }
     }
 }
