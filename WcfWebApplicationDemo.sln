@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfWebApplicationDemo", "WcfWebApplicationDemo\WcfWebApplicationDemo.csproj", "{11137EE4-7A58-41A1-A7AC-CFE6BEEDC0F8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfWebApplicationClient", "WcfWebApplicationClient\WcfWebApplicationClient.csproj", "{2EDE427A-38BB-4728-8C18-15FD056BC6CF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{11137EE4-7A58-41A1-A7AC-CFE6BEEDC0F8} = {11137EE4-7A58-41A1-A7AC-CFE6BEEDC0F8}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
